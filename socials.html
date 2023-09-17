@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .wrapper {
+      padding-top: 15px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 22px;
+      /* Change the icons colours here*/
+      color: black
+    }
+
+
+    .instagram:hover {
+      color: gray;
+    }
+    .tiktok:hover {
+      color: gray;
+    }
+
+    .youtube:hover {
+      color: gray;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+        
+        
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-tiktok"></i></span>
+      </div>
+
+      <div id="youtube" onclick="navigate(this.id)" class="social">
+        <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+      </div>
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "blog")
+          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "instagram") {
+          window.open("https://instagram.com/azjeffects", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/@azjeffects", '_blank').focus(); //Add the url to your tiktok account
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/@azjeffects", '_blank').focus(); //Add the url to your youtube account
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
